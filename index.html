@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oi, fiz pra você!!!</title>
+    <style>
+        :root{
+            --bg: #fff7fb;
+            --card: #ffffff;
+            --accent: #ff6b81;
+            --text: #2b2b2b;
+            --muted: #6b6b6b;
+        }
+        *{box-sizing:border-box}
+        html,body{height:100%}
+        body{
+            margin:0;
+            font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            background: linear-gradient(135deg, var(--bg), #ffffff);
+            color: var(--text);
+            display:flex;
+            align-items:flex-start;
+            justify-content:center;
+            padding:2rem;
+        }
+        .wrap{
+            width:100%;
+            max-width:760px;
+        }
+        .site-header{
+            background:linear-gradient(90deg, rgba(255,107,129,0.12), rgba(255,164,177,0.06));
+            padding:1.1rem 1rem;
+            border-radius:12px;
+            text-align:center;
+            font-weight:700;
+            color:var(--accent);
+            box-shadow:0 8px 24px rgba(16,24,40,0.06);
+            margin-bottom:1rem;
+            font-size:1.05rem;
+        }
+        .card{
+            background:var(--card);
+            padding:1rem;
+            border-radius:10px;
+            box-shadow:0 6px 18px rgba(16,24,40,0.04);
+            margin-bottom:0.9rem;
+        }
+        p{margin:0 0 .75rem 0;color:var(--muted)}
+        article h2{margin:0 0 .5rem 0;color:#222;font-size:1.05rem}
+        ul,ol{margin:0;padding-left:1.25rem;color:var(--text)}
+        li{margin:.35rem 0}
+        .site-footer{
+            text-align:center;
+            font-size:.9rem;
+            color:var(--muted);
+            padding:.5rem 0;
+        }
+
+        /* Botões */
+        .actions { margin-top:.4rem; }
+        .btn {
+            display:inline-block;
+            padding:.6rem .9rem;
+            border-radius:8px;
+            text-decoration:none;
+            font-weight:700;
+            font-size:.95rem;
+            color:#fff;
+            margin-right:.5rem;
+            box-shadow:0 6px 12px rgba(16,24,40,0.06);
+        }
+        .btn-primary { background:var(--accent); border: 1px solid rgba(255,107,129,0.18); }
+        .btn-spotify { background:#1DB954; border: 1px solid rgba(0,0,0,0.06); }
+
+        @media (min-width:900px){
+            body{padding:3rem}
+            .wrap{max-width:920px}
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header class="site-header">Este site foi feito no intuito de agradar você, hehe</header>
+
+        <section class="card">
+            <p>Espero que goste, fiz de coração</p>
+        </section>
+
+        <section class="card">
+            <article>
+                <h2>Coisas que eu gosto em você:</h2>
+                <ul>
+                    <li>Seus gostos</li>
+                    <li>Seu jeito de ser</li>
+                    <li>Seu olhar</li>
+                    <li>Seus interesses</li>
+                    <li>Você!!!!!!!!!</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="card">
+            <article>
+                <h2>Coisas que quero fazer com você:</h2>
+                <ol>
+                    <li>Viajar juntos</li>
+                    <li>Assistir filmes de mãos dadas</li>
+                    <li>Jantar à luz de velas</li>
+                    <li>Construir memórias inesquecíveis</li>
+                    <li>Criar vários animaizinhos</li>
+                    <li>Construir uma vida boa ao teu lado</li>
+                </ol>
+            </article>
+        </section>
+
+        <!-- seção substituída: carta aberta agora como botões -->
+        <section class="card">
+            <article>
+                <h2>Carta aberta</h2>
+                <p>Clique para abrir a carta em uma nova aba ou ouvir a música no Spotify.</p>
+                <div class="actions">
+                    <a class="btn btn-primary" href="poem.html" target="_blank" rel="noopener noreferrer" aria-label="Abrir carta em nova aba">Abrir carta</a>
+                    <!-- Substitua o URL abaixo pelo link da faixa que deseja -->
+                    <a class="btn btn-spotify" href="https://open.spotify.com/intl-pt/track/5UHM8Z6GXhaB6RUlBemByI?si=ea78dff7fac24167" target="_blank" rel="noopener noreferrer" aria-label="Abrir música no Spotify">Ouvir no Spotify</a>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <footer class="site-footer">Feito por: Matheus</footer>
+        </section>
+        <section>
+            <footer class="site-footer">Data: 2024</footer>
+        </section>
+    </div>
+</body>
+</html>
